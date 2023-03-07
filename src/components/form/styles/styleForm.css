@@ -7,15 +7,15 @@ form{
 }
 .c-left{
     display: block;
-    width: 700px;
-    height: 700px;
+    width: 40%;
+    height: 80%;
     padding: 1em;
     border-radius: 1em 0em 0em 1em;
     background-image: url('../../img/Form/img-01.JPG');
     background-size: cover;
-    animation: imgAnimate 40s infinite ease;
     box-shadow: 0 0 10px rgb(152, 142, 142);
     border-right: 1px solid white;
+    animation: imgAnimate 37s infinite ease;
 }
 @keyframes imgAnimate {
     0%{
@@ -45,8 +45,8 @@ form label{
     display: flex;
     flex-direction: column;
     background: rgba(105, 254, 35, 0.073);
-    width: 400px;
-    height: 700px;
+    width: 25%;
+    height: 80%;
     padding: 1em;
     gap: 1em;
     border-radius: 0em 1em 1em 0em;
@@ -66,8 +66,53 @@ form label span{
     font-weight: bold;
 }
 form label input{
-    width: 60%;
+    width: 100%;
     height: 2em;
+    background: none;
+    border: none;
+    outline: none;
+    padding-left: 1.3em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(49, 45, 45);
+    border-bottom: 2px solid rgb(42, 228, 42);
+    transition: all .5s;
+}
+form label input:focus{
+    box-shadow: 0 0 5px rgb(57, 226, 57);
+}
+form label .container{
+    width: 60%;
+    height: fit-content;
+}
+form label .container i{
+    position: relative;
+    left: .2em;
+    top: -2em;
+    color: rgb(58, 214, 58);
+}
+form label button{
+    background: rgb(57, 226, 57);
+    width: 50%;
+    height: 8%;
+    border: none;
+    border-radius: .8em;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    transition: all .8s;
+}
+form label button:hover{
+    background: white;
+    color: rgb(57, 226, 57);
+    box-shadow: 0 0 7px rgb(52, 243, 52);
+}
+form label button:focus{
+    background: white;
+    color: rgb(57, 226, 57);
+    box-shadow: 0 0 7px rgb(52, 243, 52);
+    outline: none;
 }
 @media (max-width: 700px) {
     .c-left{
@@ -75,5 +120,6 @@ form label input{
     }
     form label{
         border-radius: 1em;
+        width: 70%;
     }
 }
