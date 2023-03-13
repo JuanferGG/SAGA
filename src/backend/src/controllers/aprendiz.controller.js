@@ -44,6 +44,10 @@ export const createAprendiz = async (req, res) => {
 			[user, password, cedula, nombre, apellido, correo, celular]
 		);
 
+			// if (cedula ) {
+				
+			// }
+
 		res.send({
 			id: rows.insertId,
 			user,

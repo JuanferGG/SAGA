@@ -15,7 +15,7 @@ const Form = () => {
 
 	const onSubmit = () => {
 		axios
-			.post('http://localhost:400/api/login', body)
+			.post('http://localhost:3000/api/login', body)
 			.then(({ data }) => {
 				console.log(data);
 			})
@@ -25,7 +25,7 @@ const Form = () => {
 	};
 
 	return (
-		<form>
+		<form action='/login' method='get'>
 			<div className="c-left"></div>
 			<label>
 				<img src={logo_sena}></img>

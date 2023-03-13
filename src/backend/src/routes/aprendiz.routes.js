@@ -1,23 +1,17 @@
 import { Router } from 'express';
-import {
-	getAprendiz,
-	createAprendiz,
-	updateAprendiz,
-	deleteAprendiz,
-	getUser,
-} from '../controllers/aprendiz.controller.js';
+import * as aprendizCtrl from '../controllers/aprendiz.controller.js';
 
 // Creo un router
 const router = Router();
 
-router.get('/aprendiz', getAprendiz);
+router.get('/aprendiz', aprendizCtrl.getAprendiz);
 
-router.get('/aprendiz/:user', getUser);
+router.get('/aprendiz/:user', aprendizCtrl.getUser);
 
-router.post('/aprendiz', createAprendiz);
+router.post('/aprendiz', aprendizCtrl.createAprendiz);
 
-router.patch('/aprendiz', updateAprendiz);
+router.patch('/aprendiz', aprendizCtrl.updateAprendiz);
 
-router.delete('/aprendiz', deleteAprendiz);
+router.delete('/aprendiz', aprendizCtrl.deleteAprendiz);
 
 export default router;

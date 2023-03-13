@@ -6,7 +6,7 @@ import {
 	DB_PASSWORD,
 	DB_PORT,
 	DB_DATABASE,
-} from './config.js';
+} from  './config.js'; 
 
 // Hacemos la conexión con la base de datos
 // Por defecto el puerto es 3306
